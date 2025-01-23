@@ -31,7 +31,7 @@ class BikeShareAnalysis:
 
             restart = input("\n다시 시작하시겠습니까? 'yes' 또는 'no'를 입력하세요:\n").lower()
             if restart != 'yes':
-                print("프로그램을 종료합니다. 감사합니다!")
+                print("테스트를 위해 바꿉니다")
                 break
 
     def get_filters(self):
@@ -39,7 +39,7 @@ class BikeShareAnalysis:
 
         city_names = list(self.CITY_DATA.keys())
         while True:
-            city = input(f"분석할 도시를 입력하세요 {city_names}: ").lower()
+            city = input(f"분석할 도시시 {city_names}: ").lower()
             if city in city_names:
                 self.city = city
                 break
