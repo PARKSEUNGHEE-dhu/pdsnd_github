@@ -35,7 +35,7 @@ class BikeShareAnalysis:
                 break
 
     def get_filters(self):
-        print("안녕하세요! 미국 자전거 공유 데이터를 탐색해봅시다!\n")
+        print("안녕하세요! 미국 자전거 데이터 분석 프로젝트에 오신것을 환영합니다.\n")
 
         city_names = list(self.CITY_DATA.keys())
         while True:
