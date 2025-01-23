@@ -31,15 +31,15 @@ class BikeShareAnalysis:
 
             restart = input("\n다시 시작하시겠습니까? 'yes' 또는 'no'를 입력하세요:\n").lower()
             if restart != 'yes':
-                print("프로그램을 종료합니다. 감사합니다!")
+                print("테스트를 위해 바꿉니다")
                 break
 
     def get_filters(self):
-        print("안녕하세요! 미국 자전거 공유 데이터를 탐색해봅시다!\n")
+        print("안녕하세요! 미국 자전거 데이터 분석 프로젝트에 오신것을 환영합니다.\n")
 
         city_names = list(self.CITY_DATA.keys())
         while True:
-            city = input(f"분석할 도시를 입력하세요 {city_names}: ").lower()
+            city = input(f"분석할 도시시 {city_names}: ").lower()
             if city in city_names:
                 self.city = city
                 break
